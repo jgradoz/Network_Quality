@@ -9,7 +9,7 @@ library(biblionetwork)
 
 ##### Set working directory
 
-setwd("C:/Users/jgrad/Desktop/Network_Quality/Network_Quality")
+setwd("C:/Users/jgrad/Desktop/Network_Quality/Network_Quality/Data")
 
 
 # Import list of articles extracted from SCOPUS

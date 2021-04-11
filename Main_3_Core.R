@@ -7,7 +7,7 @@ library(biblionetwork)
 
 ##### Set working directory
 
-setwd("C:/Users/jgrad/Desktop/Network_Quality/Network_Quality")
+setwd("C:/Users/jgrad/Desktop/Network_Quality/Network_Quality/Data")
 
 ##### Import file used
 
@@ -644,7 +644,7 @@ for(i in 1:nrow(eoeoe)){eoeoe$crapaud[i]<-nchar(eoeoe$Firstauthor[i])}
 
 ##### Ce nettoyage est stocké sur un autre script
 
-source("Functions_and_cleaning/Cleaningdata.R")
+source("../Functions_and_cleaning/Cleaningdata.R")
 
 
 ##### Detecte toutes les refs qui commencent par une année, qui correspond aux articles de 
@@ -800,7 +800,7 @@ eoeoe<-eoeoe[eoeoe$decat<4,]
 
 ##### Deuxième vague de nettoyage de Firstauthor
 
-source("Functions_and_cleaning/Cleaningbis.R")
+source("../Functions_and_cleaning/Cleaningbis.R")
 
 ##### On remplace les tirets par des espaces, et on supprime tous les espaces
 

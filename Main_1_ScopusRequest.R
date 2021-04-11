@@ -8,11 +8,11 @@ library(biblionetwork)
 
 # Set Working Directory
 
-setwd("C:/Users/jgrad/Desktop/Network_Quality/Network_Quality")
+setwd("C:/Users/jgrad/Desktop/Network_Quality/Network_Quality/Data")
 
 #Importer le fichier issu de EconLit
 
-z <- read_delim("C:/Users/jgrad/Desktop/Network_Quality/Network_Quality/Data_1_EconLit.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+z <- read_delim("C:/Users/jgrad/Desktop/Network_Quality/Network_Quality/Data/Data_1_EconLit.txt", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
 
 
 # Détecter la balise délimitant le titre des articles

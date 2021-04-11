@@ -1,5 +1,5 @@
 
-setwd("C:/Users/jgrad/Desktop/Network_Quality/Network_Quality")
+setwd("C:/Users/jgrad/Desktop/Network_Quality/Network_Quality/Data")
 
 load("Data_6_Core.rda")
 

@@ -1,0 +1,30 @@
+ RAND Journal of Economics	38	Industrial Organization	 Management Science	75	Generalist in management	 International Journal of Production Economics	30	Production and operations management
+ Review of Economic Studies	28	Generalist in economics	 American Economic Review	54	Generalist in economics	 American Economic Review	28	Generalist in economics
+ International Journal of Industrial Organization	27	Industrial Organization	 RAND Journal of Economics	43	Industrial Organization	 Management Science	28	Generalist in management
+ Strategic Management Journal	16	Business strategy and international management, Organization studies	 Journal of Operations Management	35	Production and operations management	 Journal of International Economics	20	Macroeconomics, international and monetary economics
+ American Journal of Agricultural Economics	15	Environment, Agriculture, Natural resources, Energy	 Quarterly Journal of Economics	31	Generalist in economics	 Marketing Science	19	Marketing
+ Management Science	13	Generalist in management	 Marketing Science	30	Marketing	 Food Policy	16	Environment, Agriculture, Natural resources, Energy
+ Quarterly Journal of Economics	13	Generalist in economics	 American Journal of Agricultural Economics	26	Environment, Agriculture, Natural resources, Energy	 Journal of Cleaner Production	16	Environment, Agriculture, Natural resources, Energy
+ Marketing Science	12	Marketing	 International Journal of Quality and Reliability Management	26	Production and operations management	 European Journal of Operational Research	15	Operations research
+ American Economic Review	10	Generalist in economics	 International Journal of Industrial Organization	25	Industrial Organization	 Econometrica	13	Generalist in economics
+ Journal of Economic Theory	10	Economic Theory	 International Journal of Production Economics	25	Production and operations management	 Quarterly Journal of Economics	13	Generalist in economics
+ Journal of Economics and Management Strategy	10	Industrial Organization	 Journal of Industrial Economics	20	Industrial Organization	 Journal of Economics and Management Strategy	12	Industrial Organization
+ Journal of Industrial Economics	10	Industrial Organization	 Journal of International Economics	19	Macroeconomics, international and monetary economics	 Journal of Operations Management	12	Production and operations management
+ Journal of Economics & Management Strategy	9	Industrial Organization	 Econometrica	18	Generalist in economics	 Production and Operations Management	12	Production and operations management
+ Journal of Operations Management	9	Production and operations management	 Journal of Political Economy	18	Generalist in economics	 World Development	12	Development and transition economics
+ Total Quality Management	9	Production and operations management	 Review of Economic Studies	18	Generalist in economics	 RAND Journal of Economics	11	Industrial Organization
+ Journal of Health Economics	8	Health economics and management	 Journal of Economics and Management Strategy	17	Industrial Organization	 Telecommunications Policy	11	Industrial Organization
+ Journal of International Economics	8	Macroeconomics, international and monetary economics	 Journal of Health Economics	17	Health economics and management	 Review of Economic Studies	10	Generalist in economics
+ European Economic Review	7	Generalist in economics	 Production and Operations Management	17	Production and operations management	 Review of Economics and Statistics	10	Generalist in economics
+ Journal of Marketing Research	7	Marketing	 World Development	16	Development and transition economics	 Journal of Political Economy	9	Generalist in economics
+ Academy of Management Journal	6	Generalist in management	 Academy of Management Journal	15	Generalist in management	 American Journal of Agricultural Economics	8	Environment, Agriculture, Natural resources, Energy
+ Economics Letters	6	Generalist in economics	 Journal of Economic Literature	14	Generalist in economics	 European Review of Agricultural Economics	7	Environment, Agriculture, Natural resources, Energy
+ Journal of Political Economy	6	Generalist in economics	 International Journal of Operations and Production Management	13	Production and operations management	 American Economic Journal: Microeconomics	6	Economic Theory
+ Decision Sciences	5	Operations research	 Food Policy	12	Environment, Agriculture, Natural resources, Energy	 Economic Journal	6	Generalist in economics
+ Econometrica	5	Generalist in economics	 Journal of Environmental Economics and Management	12	Environment, Agriculture, Natural resources, Energy	 International Journal of Industrial Organization	6	Industrial Organization
+ European Journal of Political Economy	5	Public economics and public choice	 Journal of Marketing	12	Marketing	 Journal of Agricultural Economics	6	Environment, Agriculture, Natural resources, Energy
+ Journal of Economic Literature	5	Generalist in economics	 Manufacturing and Service Operations Management	12	Production and operations management	 Ecological Economics	5	Environment, Agriculture, Natural resources, Energy
+ Journal of Marketing	5	Marketing	 Research Policy	12	Innovation and entrepreneurship	 Economics Letters	5	Generalist in economics
+ Journal of Retailing	5	Marketing	 European Review of Agricultural Economics	11	Environment, Agriculture, Natural resources, Energy	 Journal of Health Economics	5	Health economics and management
+ Journal of the Academy of Marketing Science	5	Marketing	 Journal of Cleaner Production	11	Environment, Agriculture, Natural resources, Energy	 Regulation and Governance	5	Development and transition economics
+ Research Policy	5	Innovation and entrepreneurship	 Journal of Marketing Research	11	Marketing	 Agriculture and Human Values	4	Environment, Agriculture, Natural resources, Energy

@@ -1,0 +1,100 @@
+SHAPIRO, C	Economics	TIROLE, J	Economics	SARKIS, J	Operations Management
+TEECE, D.J	Business, Management	SHAPIRO, C	Economics	CASADESUS, M	Operations Management
+SCHMALENSEE, R	Economics	ZEITHAML, V.A	Business, Management	TIROLE, J	Economics
+FARRELL, J	Economics	SCHMALENSEE, R	Economics	NARASIMHAN, R	Operations Management
+ZEITHAML, V.A	Business, Management	SCHROEDER, R.G	Operations Management	KARAPETROVIC, S	Operations Management
+BERRY, L.L	Business, Management	FARRELL, J	Economics	SHAPIRO, C	Economics
+SALONER, G	Economics	REARDON, T	Economics	SCHROEDER, R.G	Operations Management
+STIGLITZ, J.E	Economics	RUST, R.T	Business, Management	NAGURNEY, A	Operations Management
+PARASURAMAN, A	Business, Management	DALE, B.G	Operations Management	REARDON, T	Economics
+PAKES, A	Economics	TELLIS, G.J	Business, Management	PRAKASH, A	Social Sciences
+OLIVER, R.L	Business, Management	SOHAL, A.S	Operations Management	MAYER, T	International Economics
+ECONOMIDES, N	Economics	PORTER, M.E	Business, Management	ZHU, Q	Operations Management
+WERNERFELT, B	Business, Management	SHUGAN, S.M	Business, Management	WAGNER, J	Economics
+TIROLE, J	Economics	SUTTON, J	Economics	MILGROM, P	Economics
+PORTER, M.E	Business, Management	SHLEIFER, A	Economics	CHEN, Y	Economics
+MILGROM, P	Economics	FUDENBERG, D	Economics	ROTH, A.V	Economics
+FORNELL, C	Business, Management	BERRY, L.L	Business, Management	ROBERTS, M.J	International Economics
+WOLINSKY, A	Economics	SARKIS, J	Operations Management	PAKES, A	Economics
+WILSON, R	Economics	HELPMAN, E	International Economics	MARTINEZ-LORENTE, A.R	Operations Management
+WILLIAMSON, O.E	Economics	PAKES, A	Economics	HENSON, S	Agricultural and Biological Sciences
+TVERSKY, A	Psychology	MILGROM, P	Economics	FEENSTRA, R.C	International Economics
+SUTTON, J	Economics	WERNERFELT, B	Business, Management	BLIND, K	Business, Management
+ROBERTS, J	Economics	STIGLITZ, J.E	Economics	WANG, Y	Operations Management
+HECKMAN, J	Economics	ROBERTS, J	Economics	SUTTON, J	Economics
+VIVES, X	Economics	PRAKASH, A	Social Sciences	HERAS, I	Operations Management
+SIMON, H.A	Computer Science	PONTE, S	Social Sciences	HELPMAN, E	International Economics
+SANCHEZ, R	Business, Management	OLIVER, R.L	Business, Management	ZEITHAML, V.A	Business, Management
+RUST, R.T	Business, Management	HECKMAN, J.J	Economics	WOOLDRIDGE, J.M	Economics
+RUBINSTEIN, A	Economics	HANDFIELD, R.B	Operations Management	VAN WASSENHOVE, L.N	Operations Management
+MATUTES, C	Economics	FLYNN, B.B	Operations Management	SETHI, S.P	Operations Management
+MASKIN, E	Economics	CORBETT, C.J	Operations Management	POTOSKI, M	Social Sciences
+JURAN, J.M	Operations Management	ZHU, Q	Operations Management	MARETTE, S	Economics
+DAVID, P.A	Economics	VAN DER WIELE, T	Operations Management	MAERTENS, M	Social Sciences
+BAGWELL, K	Economics	ROTH, A.V	Economics	LUSK, J.L	Economics
+THISSE, J.F	Economics	PARASURAMAN, A	Business, Management	ZHANG, J	Business, Management
+STIGLITZ, J	Economics	ELLISON, G	Economics	XIE, J	Business, Management
+STIGLER, G.J	Economics	BENTLER, P.M	Psychology	WILSON, J.S	Economics
+SOBEL, J	Economics	VILLAS-BOAS, J.M	Business, Management	VIVES, X	Economics
+SCHROEDER, R.G	Operations Management	TVERSKY, A	Psychology	TALLURI, S	Operations Management
+SCHERER, F.M	Economics	TEECE, D.J	Business, Management	SCHOTT, P.K	International Economics
+SALOP, S	Economics	SCOTT, W.R	Business, Management	RUBEN, R	Social Sciences
+KATZ, M	Economics	RODRIK, D	International Economics	RAYNOLDS, L.T	Social Sciences
+GRILICHES, Z	Economics	RABIN, M	Economics	LAI, K.H	Operations Management
+FUDENBERG, D	Economics	LEE, H.L	Operations Management	FLYNN, B.B	Operations Management
+DALE, B.G	Operations Management	GIBBON, P	Social Sciences	VILLAS-BOAS, J.M	Business, Management
+BENTLER, P.M	Psychology	GANDAL, N	Economics	TERZIOVSKI, M	Operations Management
+VICKERS, J	Social Sciences	FORNELL, C	Business, Management	SWINNEN, J	Economics
+TELLIS, G.J	Business, Management	FEENSTRA, R.C	International Economics	SCHOTT, P	International Economics
+TAYLOR, S	Business, Management	DRANOVE, D	Medicine	SANA, S.S	Operations Management
+STREECK, W	Social Sciences	WILSON, J.S	International Economics	PRAJOGO, D.I	Operations Management
+SHRIVASTAVA, P	Business, Management	VON HIPPEL, E	Business, Management	PONTE, S	Social Sciences
+SELTEN, R	Economics	VIVES, X	Economics	MELITZ, M	International Economics
+ROTHSCHILD, M	Economics	VERBEKE, W	Agricultural and Biological Sciences	MCCLUSKEY, J.J	Economics
+ROBINSON, J	Economics	SHOGREN, J.F	Economics	EATON, J	International Economics
+RIORDAN, M.H	Economics	BAGWELL, K	Economics	DARNALL, N	Business, Management
+REGIBEAU, P	Economics	ZUCKERMAN, A	Engineering	CHAUDHURI, K.S	Operations Management
+RAMEY, G	Economics	ZAIRI, M	Business, Management	BERRY, L.L	Business, Management
+NEWHOUSE, J.P	Medicine	WILLIAMSON, O.E	Economics	ZHAO, X	Operations Management
+NELSON, R.R	Business, Management	WANG, H	Business, Management	YU, M	Operations Management
+KOGUT, B	Business, Management	WAGNER, J	Economics	WOLINSKY, A	Economics
+CLARK, K.B	Business, Management	VICKERS, J	Economics	VAN REENEN, J	Economics
+CAVES, R.E	Economics	VARIAN, H.R	Economics	TVERSKY, A	Psychology
+ANDERSON, E.W	Business, Management	TAN, K.C	Business, Management	SOHAL, A.S	Operations Management
+WATTS, R	Business, Management	SOHAL, A	Operations Management	SOHAL, A	Operations Management
+WALKER, G	Business, Management	SIMON, H.A	Computer Science	SHLEIFER, A	Economics
+WALDMAN, M	Economics	MONROE, K.B	Business, Management	SEXTON, R.J	Economics
+VISCUSI, W.K	Economics	LERNER, J	Economics	SCHMALENSEE, R	Economics
+TYBOUT, J	International Trade	HUMMELS, D	International Economics	RUBINSTEIN, A	Economics
+TEECE, D	Business, Management	HAUSMAN, J	Economics	ROBERTS, J	Economics
+STAELIN, R	Business, Management	GEREFFI, G	Social Sciences	PAGELL, M	Operations Management
+SPENCE, A.M	Economics	BAGOZZI, R.P	Business, Management	LOUREIRO, M.L	Economics
+SMITH, A	Business, Management	WOLINSKY, A	Economics	KORTUM, S	International Economics
+SLOVIC, P	Medicine	WILSON, R	Economics	GOLDBERG, P.K	International Economics
+SLADE, M.E	Economics	WILSON, P.W	Economics	DE LOECKER, J	International Economics
+SHUGAN, S.M	Business, Management	WALDMAN, M	Economics	BERNARD, A.B	International Economics
+SHAVELL, S	Social Sciences	VOSS, C	Operations Management	WALDFOGEL, J	Economics
+SHAKED, A	Economics	VENKATRAMAN, N	Business, Management	TYBOUT, J.R	International Economics
+SCOTCHMER, S	Economics	TUSHMAN, M.L	Business, Management	TEECE, D.J	Business, Management
+SATORRA, A	Mathematics	STONEMAN, P	Economics	TAYLOR, T.A	Operations Management
+SALOP, S.C	Economics	SRINIVASAN, K	Business, Management	SPIEGLER, R	Economics
+RUST, J	Economics	SMITH, A	Business, Management	SKOURI, K	Operations Management
+ROSEN, S	Economics	SALONER, G	Economics	SAMSON, D	Operations Management
+ROGERSON, W.P	Economics	RYSMAN, M	Economics	REDDING, S	International Economics
+POWELL, W.W	Business, Management	REY, P	Economics	POWER, D	Operations Management
+POSTLEWAITE, A	Economics	MCFADDEN, D	Economics	PORTER, M.E	Business, Management
+PFEFFER, J	Business, Management	MARCH, J.G	Business, Management	OTSUKI, T	Economics
+PAVITT, K	Business, Management	LUSK, J.L	Economics	OLARU, M	Business, Management
+NICKELL, S.J	Economics	KARAPETROVIC, S	Operations Management	NEARY, J.P	International Economics
+MARCH, J.G	Business, Management	HENSON, S	Agricultural and Biological Sciences	MITHOFER, D	Agricultural and Biological Sciences
+KLEMPERER, P	Economics	GRILICHES, Z	Economics	MELITZ, M.J	Economics
+HART, O	Economics	BERRY, S	Economics	MARTINEZ-COSTA, M	Operations Management
+GROSSMAN, G.M	International Trade	WILKINSON, A	Business, Management	MARKUSEN, J.R	International Economics
+GARVIN, D.A	Business, Management	WHINSTON, M.D	Economics	MANOVA, K	International Economics
+FAMA, E.F	Economics	WHEELER, D	Economics	KLASSEN, R.D	Operations Management
+DOSI, G	Economics	WANG, Y	Operations Management	KHANDELWAL, A.K	International Economics
+COLE, R.E	Business, Management	VISCUSI, W.K	Economics	GOYAL, S.K	Operations Management
+BESEN, S.M	Economics	VAN WASSENHOVE, L.N	Operations Management	GIBBON, P	Social Sciences
+ZUCKER, L.G	Business, Management	TREFLER, D	International Economics	GEREFFI, G	Social Sciences
+ZAIRI, M	Business, Management	TRAIN, K	Economics	FARRELL, J	Economics
+NA	NA	TERZIOVSKI, M	Operations Management	CORBETT, C.J	Operations Management
