@@ -1002,7 +1002,10 @@ label_com <- function(graph, biggest_community = FALSE, community_threshold = 0.
   label_com <- graph %>%
     activate(nodes) %>%
     as_tibble()
-  
+ 
+
+
+     
   # Changing the name of the variable chosen
   colnames(label_com)[colnames(label_com) == community_name_column] <- "Community_name"
   colnames(label_com)[colnames(label_com) == community_size_column] <- "Size_com"

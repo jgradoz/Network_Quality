@@ -5,7 +5,7 @@
 ############################################################################################################################
 
 
-setwd("C:/Users/jgrad/Desktop/Network_Quality/Network_Quality")
+setwd("C:/Users/jgrad/Desktop/Network_Quality/Network_Quality/Data")
 
 graph_data_path <- "C:/Users/jgrad/Desktop/Network_Quality/Network_Quality/Graphs_and_Descriptive_Stats/"
 
@@ -43,7 +43,7 @@ for (p in github_list) {
 
 
 
-source("Functions_and_cleaning/dyncoupfct.R")
+source("../Functions_and_cleaning/dyncoupfct.R")
 
 
 mypalette <- c("#1969B3", "#01A5D8", "#DA3E61", "#3CB95F", "#E0AF0C", "#E25920", "#6C7FC9", "#DE9493", "#CD242E", "#6F4288", "#B2EEF8", "#7FF6FD", "#FDB8D6", "#8BF9A9", "#FEF34A", "#FEC57D", "#DAEFFB", "#FEE3E1", "#FBB2A7", "#EFD7F2", "#5CAADA", "#37D4F5", "#F5779B", "#62E186", "#FBDA28", "#FB8F4A", "#A4B9EA", "#FAC2C0", "#EB6466", "#AD87BC", "#0B3074", "#00517C", "#871B2A", "#1A6029", "#7C4B05", "#8A260E", "#2E3679", "#793F3F", "#840F14", "#401C56", "#003C65", "#741A09", "#602A2A", "#34134A", "#114A1B", "#27DDD1", "#27DD8D", "#4ADD27", "#D3DD27", "#DDA427", "#DF2935", "#DD27BC", "#BA27DD", "#3227DD", "#2761DD", "#27DDD1")
@@ -276,6 +276,21 @@ z<-intersect(desco$identifiantcit,eoeoe2$identifiant)
 z<-as.data.frame(z)
 
 
+n_occur <- data.frame(table(desco$identifiantcit))
+
+
+for(i in 1:nrow(n_occur)){
+  if(n_occur$Freq[i]>1){
+    j<-which(desco$identifiantcit==n_occur$Var1[i])
+    for(k in j){
+      desco$identifiantcit[k]<-paste(desco$identifiantcit[k],k)
+    }
+  }
+}
+
+n_occur <- data.frame(table(desco$identifiantcit))
+
+
 eoeoe2$identifiantcit<-"AB"
 for(i in 1:nrow(eoeoe2)){
   j<-which(eoeoe2$V2[i] == desco$Cartel)
@@ -292,20 +307,6 @@ desco$Page2<-as.character(desco$Page2)
 desco<-desco[desco$Datepubli2 > 1989,]
 eoeoe2<-eoeoe2[eoeoe2$Date > 1989,]
 
-
-n_occur <- data.frame(table(desco$identifiantcit))
-
-
-for(i in 1:nrow(n_occur)){
-  if(n_occur$Freq[i]>1){
-    j<-which(desco$identifiantcit==n_occur$Var1[i])
-    for(k in j){
-      desco$identifiantcit[k]<-paste(desco$identifiantcit[k],k)
-    }
-  }
-}
-
-n_occur <- data.frame(table(desco$identifiantcit))
 
 
 tbl_coup_list <- dynamic_biblio_coupling(corpus = desco,
@@ -401,11 +402,12 @@ for (i in 1:length(start_date)) {
     j<-which(graph$Com_ID[i]==tolo$tolo)
     graph$color[i]<-tolo$color[j]
   }
+  
   all_nodes <- rbind(all_nodes, graph)
 }
 
 
-Year<-1992
+
 
 for (Year in all_years) {
   nodes <- list_graph_position[[paste0(Year)]] %>%
@@ -424,34 +426,70 @@ for (Year in all_years) {
     select(Com_ID.x, Com_ID.y, color, share) %>%
     slice(1)
   
+  names(communities)[names(communities) == "Com_ID.x"] <- "Com_ID"
+  
   list_graph_position[[paste0(Year)]] <- list_graph_position[[paste0(Year)]] %>%
     activate(nodes) %>%
     left_join(communities)
   
-  # Mix color for edges of different color
- # list_graph_position[[paste0(Year)]] <- list_graph_position[[paste0(Year)]] %>%
-#    activate(edges) %>%
-#    mutate(color_com_ID_to = .N()$color[to], color_com_ID_from = .N()$color[from]) %>%
-#    mutate(color_edges = DescTools::MixColor(color_com_ID_to, color_com_ID_from, amount1 = 0.5))
+ #  Mix color for edges of different color
+ list_graph_position[[paste0(Year)]] <- list_graph_position[[paste0(Year)]] %>%
+   activate(edges) %>%
+   mutate(color_com_ID_to = .N()$color[to], color_com_ID_from = .N()$color[from]) %>%
+   mutate(color_edges = DescTools::MixColor(color_com_ID_to, color_com_ID_from, amount1 = 0.5))
   
   # Cleaning progressively
   gc()
 }
 
 
+saveRDS(list_graph_position, paste0(graph_data_path, "list_graph_", first_year, "-", last_year + time_window_length - 1, ".rds"))
 
 
 
 
+
+# loading the data
+list_graph_position <- readRDS(paste0(graph_data_path, "list_graph_", first_year, "-", last_year + time_window_length - 1, ".rds"))
+
+# creating a table with the data for nodes and edges for each window
+
+nodes_lf <- lapply(list_graph_position, function(tbl) (tbl %>% activate(nodes) %>% as.data.table()))
+nodes_lf <- lapply(nodes_lf, function(dt) (dt[, .(identifiantcit, x, y, Size_com, Com_ID, color)]))
+nodes_lf <- rbindlist(nodes_lf, idcol = "window")
+nodes_lf <- nodes_lf[, window := paste0(window, "-", as.integer(window) + 4)][order(identifiantcit, window)]
+
+edges_lf <- lapply(list_graph_position, function(tbl) (tbl %>% activate(edges) %>% as.data.table()))
+edges_lf <- lapply(edges_lf, function(dt) (dt[, .(Source, Target, weight, Com_ID, color_edges)]))
+edges_lf <- rbindlist(edges_lf, idcol = "window")
+edges_lf <- edges_lf[, window := paste0(window, "-", as.integer(window) + 4)]
+
+nodes_info <- desco[desco$identifiantcit %in% unique(nodes_lf$identifiantcit)][, c("identifiancit", "titre", "Datepubli2", "publi")]
+
+write_csv(nodes_lf, "nodes_lf.csv")
+write_csv(edges_lf, "edges_lf.csv")
+write_csv(nodes_info, paste0(platform_data, "nodes_info.csv"))
+
+
+
+
+
+
+
+
+
+
+
+Year<-1995
 run = T
 
 if(run == TRUE){
-  list_graph_position <- readRDS(paste0(graph_data_path, "list_graph_", first_year, "-", last_year + time_window - 1, ".rds"))
+  list_graph_position <- readRDS(paste0(graph_data_path, "list_graph_", first_year, "-", last_year + time_window_length - 1, ".rds"))
   
   com_label <- list()
   
   for (Year in all_years) {
-    com_label[[paste0(Year)]] <- label_com(list_graph_position[[paste0(Year)]], biggest_community = TRUE, community_threshold = 0.01)
+    com_label[[paste0(Year)]] <- label_com(list_graph_position[[paste0(Year)]], biggest_community = FALSE, community_threshold = 0.01, community_name_column = "Com_ID", community_size_column = "share")
   }
   
   list_ggplot <- list()
@@ -467,8 +505,8 @@ if(run == TRUE){
       theme(legend.position = "none") +
       scale_fill_identity() +
       scale_edge_colour_identity() +
-      labs(title = paste0(as.character(Year), "-", as.character(Year + time_window - 1)))
-    # ggsave("Networks/coup_2000.png", width=30, height=20, units = "cm")
+      labs(title = paste0(as.character(Year), "-", as.character(Year + time_window_length - 1)))
+    #ggsave("Networks/coup_2000.png", width=30, height=20, units = "cm")
   }
   
   
@@ -485,121 +523,5 @@ if(run == TRUE){
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-########################################################################################################################
-########################################################################################################################
-# Previous experimentations
-########################################################################################################################
-########################################################################################################################
-
-
-
-library(sigmajs)
-library(htmlwidgets)
-library(data.table)
-
-
-nodes <- graph %>%
-  activate(nodes) %>%
-  as_tibble() %>%
-  rename(id = Id) %>%
-  mutate(label = paste0("AB",graph$ids)) %>%
-  select(id,label,size,color,x,y)
-
-
-
-
-for(i in 1:nrow(eoeoe2)){
-  j<-which(nodes$id[i] == eoeoe2$identifiant)[1]
-  nodes$id[i] <- eoeoe2$V1[j]
-}
-
-
-nodes <- graph %>%
-  activate(nodes) %>%
-  as_tibble() %>%
-  rename(id = Id) %>%
-  mutate(label = paste0(nodes$id)) %>%
-  select(id,label,size,color,x,y)
-
-
-
-edges <- graph %>%
-  activate(edges) %>%
-  as_tibble() %>%
-  rename(source = Source, target = Target, size = weight, color = color_edges) %>%
-  mutate(id = 1:n()) %>%
-  select(id,source,target,color,size) %>%
-  as.data.table()
-
-nodes$id <- as.character(nodes$id)
-edges$source <- as.character(edges$source)
-edges$target <- as.character(edges$target)
-edges$id <- as.character(edges$id)
-
-
-x <- sigmajs() %>% # initialise
-  sg_nodes(nodes, id, label, size, color, x, y) %>% # add nodes
-  sg_settings(drawLabels = FALSE, drawEdgeLabels = FALSE,
-              defaultEdgeType = "curve", minNodeSize = 3, maxNodeSize = 18,
-              minEdgeSize = 0.5, maxEdgeSize = 2,
-              borderSize = 2, labelHoverBGColor = "node", singleHover = TRUE,
-              hideEdgesOnMove = TRUE, zoomMin = 0.4, zoomMax = 1.2) %>%
-  sg_edges(edges, id, source, target, size, color) %>% # add edges
-  sg_neighbors()
-
-
-dev.new()
-
-x
-
-
-
-
-library(ggiraph)
-
-ggraph(graph, "manual", x = x, y = y) +
-  geom_edge_arc(aes(color = color_edges, width = weight), alpha = 0.4, strength = 0.2, show.legend = FALSE) +
-  scale_edge_width_continuous(range = c(0.1,2)) +
-  scale_edge_colour_identity() +
-  geom_point_interactive(aes(x = x, y = y, tooltip = paste0("Ref", graph$ids), data_id = Com_ID, size = size, fill = color), pch = 21, alpha = 0.9, show.legend = FALSE) +
-  scale_size_continuous(range = c(0.2,13)) +
-  scale_fill_identity() +
-  new_scale("size") +
-  geom_text_repel(data=top_nodes, aes(x=x, y=y, label = Label), size = 2, fontface="bold", alpha = 1, point.padding=NA, show.legend = FALSE) +
-  scale_size_continuous(range = c(0.5,5)) +
-  theme_void()
-
-x <- girafe(ggobj = graph)
-
-x <- girafe_options(x = x,
-                    opts_tooltip(opacity = .8, use_fill = TRUE),
-                    opts_zoom(min = 0.8, max = 4),
-                    sizingPolicy(defaultWidth = "100%", defaultHeight = "300px"),
-                    opts_hover_inv(css = "opacity:0.1;"),
-                    opts_hover(css = "opacity:1;r:5pt;"))
 
 
